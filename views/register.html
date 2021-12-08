@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creá tu cuenta</title>
+    <link rel="icon" type="image/png" href="\images\mercado-libre.png">
+    <link rel="stylesheet" href="/css/registerStyles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+        <section class="headerML">
+            <a href="http://localhost:3001">
+                <picture id="logo">
+                    <img src="\images\logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" id="imagenLogo">
+                </picture>
+            </a>
+
+            <form class="search" action="/" method="get">
+                <fieldset>
+                    <input type="search" placeholder="Buscar productos..." name="search" />
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </fieldset>
+            </form>
+
+            <article id="textoHeader">
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </article>
+
+        </section>
+
+        <section class="sectionNavs">
+            <nav class="nav01">
+                <a class="link" href="link1">Ofertas</a>
+                <a class="link" href="link2">Tiendas Oficiales</a>
+                <a class="link" href="link3">Vender</a>
+                <a class="link" href="link4">Ayuda</a>
+            </nav>
+            
+            <nav class="nav02">
+                <a class="link" href="http://localhost:3001/register">Crea tu cuenta</a><i class="far fa-address-card"></i>
+                <a class="link" href="http://localhost:3001/login">Ingresá </a><i class="fas fa-sign-in-alt"></i>
+                <a class="link" href="a">Mis compras </a><i class="fas fa-shopping-basket"></i>
+            </nav>
+        </section>
+        <div class="burguesa">
+            <i class="fas fa-bars"></i>
+        </div>
+        <picture>
+            <img src="\images\img-home-banner.jpg" alt="Home Banner" class="banner">
+        </picture>
+    </header>
+
+    <h1>Nuevo usuario</h1>
+    <form action="/" class="form" method="post">
+        <fieldset class="field">
+            <label for="nombreApellido"></label>
+            <input type="text" name="nombreApellido" class="caja" placeholder="Nombre y apellido" required  >
+        </fieldset>
+
+        <fieldset class="field">
+            <label for="nombreUsuario"></label>
+            <input type="text" name="nombreUsuario" class="caja" placeholder="Nombre de usuari@"  minlength="4" maxlength="12" required >
+        </fieldset>
+
+        <fieldset class="field">
+            <legend>Fecha de nacimiento</legend>
+            <label for="fechaNacimiento"></label>
+            <input type="date" name="fechaNacimiento" class="caja" placeholder="Fecha de nacimiento" required >
+        </fieldset>
+
+        <fieldset class="field">
+            <label for="domicilio"></label>
+            <input type="text" name="domicilio" class="caja" placeholder="Domicilio" required >
+        </fieldset>
+
+        <fieldset class="fieldRadio">
+            <legend>Perfil de usuario</legend>
+            <label for="comprar"><input type="radio" name="perfil" value="comprar" required>Comprar</label>
+            <label for="vender"><input type="radio" name="perfil" value="vender" required>Vender</label>
+        </fieldset>
+
+        
+        <fieldset class="fieldCheckbox">
+            <legend>Categorías de interés</legend>
+                <label class="labelCheck" for="electro" name="intereses"><input type="checkbox"  id="electro" name="intereses"  value="electro"> Electro</label>  
+                <label class="labelCheck" for="moda" name="intereses"><input type="checkbox" id="moda" name="intereses"  value="moda"> Moda</label>
+                <label class="labelCheck" for="hogar" name="intereses"><input type="checkbox" id="hogar" name="intereses"  value="hogar"> Hogar</label>
+                <label class="labelCheck" for="jugueteria" name="intereses"><input type="checkbox" id="jugueteria" name="intereses"  value="jugueteria"> Juguetería</label>
+                <label class="labelCheck" for="vidaSana" name="intereses"><input type="checkbox" id="vidaSana" name="intereses"  value="vidaSana"> Vida sana</label>    
+        </fieldset>
+
+        
+        <fieldset class="field">
+            <legend>Foto de perfil</legend>
+            <label for="foto"><input type="file" name="foto" accept=".jpg, .png" ></label>
+            
+        </fieldset>
+
+        <fieldset class="field">
+            <label for="contrasenia"></label>
+            <input type="password" class="caja" name="contrasenia" placeholder="Elegí tu contraseña" minlength="8" maxlength="16" required>
+        </fieldset>
+
+        <fieldset class="field">
+            <label for="confirmar"></label>
+            <input type="password" class="caja" name="confirmar" placeholder="Repetir contraseña"  minlength="8" maxlength="16" required>
+        </fieldset>
+
+        <section id="fieldButton">
+            <button type="submit" class="enviar">Enviar</button>
+            <button type="reset" class="reset">Borrar todo</button> 
+        </section>
+
+        <footer>
+            <section id="subFooter">
+                <section class="sectionFootie">
+                        <i class="fas fa-credit-card footie"></i>
+                        <h4 class="descFootie">Pagá con tarjeta o en efectivo</h4>
+                        <p class="footieTexto">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </section>
+                <section class="sectionFootie">
+                        <i class="fas fa-gift footie"></i>
+                        <h4 class="descFootie">Envío gratis desde $ 2.500</h4>
+                        <p class="footieTexto">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+                </section>
+                <section class="sectionFootie">
+                        <i class="fas fa-user-shield footie"></i>
+                        <h4 class="descFootie">Seguridad, de principio a fin</h4>
+                        <p class="footieTexto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+                </section>
+            </section>
+            <article>
+                    <h4 class="descFootie">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+            </article>
+        </footer>
+</body>
+</html>

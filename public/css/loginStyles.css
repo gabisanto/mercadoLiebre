@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ebebebb4;
+}
+
+h1{
+    font-size:24px;
+    text-align: center;
+    color:#666;
+    margin-top:25px;
+}
+
+/*Estilos del Header - Comienzo*/
+
+header{
+    background-color: #EAC926;
+}
+
+.headerML{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#logo {
+    
+    width:45vw;
+    display:flex;
+}
+  
+#imagenLogo{
+    max-width:100%;
+}
+
+.search {
+    display: flex;
+    flex-grow: 0.5;
+    
+    flex-basis: auto;
+    border:none;
+    outline: none;
+    padding-top: 2%;
+    padding-bottom:2%;
+}
+
+.search fieldset{
+    display: flex;
+    flex-grow: 1;
+    justify-content:space-around;
+    border: none;
+    width:45vw;
+}
+
+.search fieldset input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display:flex;
+    flex-grow: 1;
+    background-color: white;
+    height: 30px;
+}
+
+.search fieldset button {
+    border:none;
+    background-color: white;
+    margin-left: -10px;
+    border-radius: 5px;
+}
+
+#textoHeader{
+    text-align: right;
+}
+
+.nav01,.nav02{
+    display:none;
+}
+
+.banner {
+    width: 100%;
+    text-align: center;
+    position:relative;
+    bottom:-1.5em;
+}
+
+.burguesa {
+    display: block;
+    background-color: #1259c3;
+    color: #ffffff;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.nav02 i{
+    margin-left: 0.5em;
+}
+
+/*Estilos del Header - Fin*/
+
+/*Estilos del Footer - Comienzo*/
+
+footer article {
+    display: block;
+    width:100%;
+    margin:0;
+}
+
+.sectionFootie {
+    background-color: white;
+    display:block;
+    /*margin-left:5vw;
+    margin-right:5vw;*/
+    padding-top:2vh;
+}
+
+#subFooter{
+    text-align: center;
+    padding-top:10px;
+    display:block;
+}
+
+.footie{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.descFootie{
+    color:#666;
+    background-color: white;
+    text-align: center;
+    display:block;
+    /*margin-left:1vw;
+    margin-right:1vw;*/
+}
+
+.footieTexto{
+    color:#666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding-bottom:2vh;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+/*Estilos del Footer - Fin*/
+
+.field{
+    border:none;
+    display:block;
+    margin: 0 auto;
+    width:70%;
+    }
+
+.caja{
+    border-radius:5px;
+    width:100%;
+    height:40px;
+    display:flex;
+    margin: 0 auto;
+    border:none;
+} 
+
+.caja:focus{
+    background-color: rgba(240, 240, 240, 0.981);
+    border-bottom: 2px solid #666;
+    outline:none;
+    border-radius:0px;
+}
+
+.enviar{
+    width:100%;
+    display:flex;
+    margin: 0 auto;
+    background-color: #0b2f64;
+    border: none;
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top:15px;
+    margin-bottom:5vh;
+    border-radius:5px;
+}
+
+#fieldButton{
+    border:none;
+    display:block;
+    margin: 0 auto;
+    width:67%;
+}
+
+.enviar:hover{
+    background-color: #0022AA;
+}
+
+@media(min-width: 769px){
+
+    .sectionNavs{
+        font-size: 12px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top:15px;
+    }
+
+    .search{
+        width:25%;
+    }
+
+    .burguesa{
+        display:none;
+    }
+
+    .nav01{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+
+    .nav02{
+        display:flex;
+        margin-right:20px;
+    }
+
+    .link{
+        color:black;
+        margin-left: 20px;
+        text-decoration-line: none;
+    }
+
+    .headerML{
+        flex-wrap:nowrap;
+        flex-direction: row;
+    }
+
+    #subFooter{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:67%;
+        margin:0 auto;
+    }
+
+    .footie:hover{
+        color:rgb(98, 147, 162)
+    }
+
+    .sectionFootie{
+        width:30%;
+        
+    }
+
+    footer article{
+        width:67%;
+        margin: 0 auto;
+    }
+
+    .search fieldset button i:hover{
+        color:rgb(70, 68, 68);
+        text-shadow: 0px 0px 5px grey;
+
+    }
+
+    .caja:hover{
+        box-shadow: 0px 0px 10px 2px #666;
+    }
+
+    .caja:focus{
+        box-shadow: none;
+    }
+
+
+}
